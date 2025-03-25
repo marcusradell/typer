@@ -15,7 +15,7 @@ public class AttemptsController {
         this.attemptsService = attemptsService;
     }
 
-    @GetMapping
+    @PostMapping
     public ResponseEntity<UUID> createAttempt(@RequestBody char letter) {
         return ResponseEntity.ok(attemptsService.create(letter));
     }
