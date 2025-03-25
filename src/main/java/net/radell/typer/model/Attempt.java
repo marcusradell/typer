@@ -4,20 +4,20 @@ import lombok.Getter;
 
 import java.util.UUID;
 
-public class Attempts {
+public class Attempt {
 
     private final char letter;
     @Getter
     private final UUID id;
 
-    public Attempts(char letter, UUID id) {
+    public Attempt(char letter, UUID id) {
         this.letter = letter;
         this.id = id;
     }
 
     @Override
     public String toString() {
-        return "Attempts{" +
+        return "Attempt{" +
                 "letter=" + letter +
                 ", id=" + id +
                 '}';

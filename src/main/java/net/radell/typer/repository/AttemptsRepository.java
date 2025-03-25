@@ -1,6 +1,6 @@
 package net.radell.typer.repository;
 
-import net.radell.typer.model.Attempts;
+import net.radell.typer.model.Attempt;
 import org.springframework.stereotype.Repository;
 
 import java.util.UUID;
@@ -8,12 +8,12 @@ import java.util.UUID;
 @Repository
 public class AttemptsRepository {
 
-    private Attempts attempts;
+    private Attempt attempt;
 
     public UUID create(char letter) {
-        attempts = new Attempts(letter, UUID.randomUUID());
-        System.out.println("attempts = " + attempts.toString());
-        return attempts.getId();
+        attempt = new Attempt(letter, UUID.randomUUID());
+        System.out.println("attempt = " + attempt.toString());
+        return attempt.getId();
     }
 
 }
