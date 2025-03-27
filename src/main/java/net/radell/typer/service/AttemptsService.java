@@ -1,15 +1,15 @@
 package net.radell.typer.service;
 
-import net.radell.typer.repository.AttemptsRepository;
+import net.radell.typer.repository.AttemptsRepositoryOld;
 import org.springframework.stereotype.Service;
 
 import java.util.UUID;
 
 @Service
 public class AttemptsService {
-    private final AttemptsRepository attemptsRepository;
+    private final AttemptsRepositoryOld attemptsRepository;
 
-    public AttemptsService(AttemptsRepository attemptsRepository) {
+    public AttemptsService(AttemptsRepositoryOld attemptsRepository) {
         this.attemptsRepository = attemptsRepository;
     }
 
