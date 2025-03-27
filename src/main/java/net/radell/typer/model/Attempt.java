@@ -1,18 +1,24 @@
 package net.radell.typer.model;
 
+import jakarta.persistence.*;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 import java.util.UUID;
 
+@Entity
+@NoArgsConstructor
+@Getter
 public class Attempt {
 
-    private final char letter;
-    @Getter
-    private final UUID id;
+    private char letter;
 
-    public Attempt(char letter, UUID id) {
+    @Id
+    @GeneratedValue(strategy = GenerationType.UUID)
+    private UUID id;
+
+    public Attempt(char letter) {
         this.letter = letter;
-        this.id = id;
     }
 
     @Override

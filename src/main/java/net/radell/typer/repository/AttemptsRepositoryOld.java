@@ -11,7 +11,7 @@ public class AttemptsRepositoryOld {
     private Attempt attempt;
 
     public UUID create(char letter) {
-        attempt = new Attempt(letter, UUID.randomUUID());
+        attempt = new Attempt(letter);
         System.out.println("attempt = " + attempt.toString());
         return attempt.getId();
     }
