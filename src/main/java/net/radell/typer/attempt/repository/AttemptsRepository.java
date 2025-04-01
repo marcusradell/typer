@@ -1,6 +1,6 @@
-package net.radell.typer.repository;
+package net.radell.typer.attempt.repository;
 
-import net.radell.typer.model.Attempt;
+import net.radell.typer.attempt.model.Attempt;
 import org.springframework.data.repository.ListCrudRepository;
 
 import java.util.UUID;

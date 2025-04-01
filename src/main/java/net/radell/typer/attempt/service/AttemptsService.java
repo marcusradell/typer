@@ -1,7 +1,7 @@
-package net.radell.typer.service;
+package net.radell.typer.attempt.service;
 
-import net.radell.typer.model.Attempt;
-import net.radell.typer.repository.AttemptsRepository;
+import net.radell.typer.attempt.model.Attempt;
+import net.radell.typer.attempt.repository.AttemptsRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.UUID;

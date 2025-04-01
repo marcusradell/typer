@@ -1,6 +1,6 @@
-package net.radell.typer.controller;
+package net.radell.typer.attempt.controller;
 
-import net.radell.typer.service.AttemptsService;
+import net.radell.typer.attempt.service.AttemptsService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

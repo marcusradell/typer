@@ -1,4 +1,4 @@
-package net.radell.typer.model;
+package net.radell.typer.attempt.model;
 
 import jakarta.persistence.*;
 import lombok.Getter;
